@@ -9,7 +9,7 @@ app.use(bodyParser.json())
 
 
 
-var HTTP_PORT = 8000
+var HTTP_PORT = process.env.PORT ||8000
 // Käynnistetään serveri
 
 app.listen(HTTP_PORT,() => {
